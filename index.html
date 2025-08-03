@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>효정 바이올린/첼로 교습소</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <!-- 메인 컨텐츠 -->
+    <div class="main-content">
+        <!--     1: 인트로 섹션 -->
+        <section class="scene scene-1" id="scene1">
+            <div class="container">
+                <div class="intro-content">
+                    <h1 class="scene-title">효정 바이올린/첼로 교습소</h1>
+                    
+                    <div class="intro-description">
+                        <p>다양한 장르의 음악과 영상을 한 곳에서 만나보세요.</p>
+                        <p>클래식부터 현대 음악까지, 당신의 취향에 맞는 음악을 발견하세요.</p>
+                    </div>
+                    <div class="features">
+                        <div class="feature-item clickable-feature" id="scene2Btn">
+                            <div class="feature-icon">🎼</div>
+                            <span>청소년 오케스트라</span>
+                        </div>
+                        <div class="feature-item clickable-feature" id="scene3Btn">
+                            <div class="feature-icon">🎻</div>
+                            <span>성인 앙상블</span>
+                        </div>
+                        <div class="feature-item clickable-feature" id="scene4Btn">
+                            <div class="feature-icon">🎬</div>
+                            <span>영상 갤러리</span>
+                        </div>
+                        <div class="feature-item clickable-feature" id="scene5Btn">
+                            <div class="feature-icon">📍</div>
+                            <span>교습소 위치</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>스크롤하여 영상 갤러리로 이동</span>
+                    <div class="scroll-arrow">↓</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scene 2: 교습소 소개 섹션 -->
+        <section class="scene scene-2" id="scene2">
+            <div class="container">
+                <div class="lesson-content">
+                    <h1 class="lesson-title">청소년 오케스트라</h1>
+                    <p class="lesson-subtitle">Youth Orchestra</p>
+                    <div class="lesson-description">
+                        <p>효정 청소년 오케스트라는 음악을 사랑하는 청소년들이 모여 함께하는 오케스트라입니다.</p>
+                        <p>베이스, 첼로, 바이올린 등 다양한 악기로 아름다운 하모니를 만들어갑니다.</p>
+                    </div>
+
+                    
+                    <!-- 이미지 슬라이드 -->
+                    <div class="image-slider">
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop" alt="오케스트라 연주 1" class="slide-image" data-image-url="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop" data-date="2024.03.15" data-description="청소년 오케스트라 정기연주회 - 베토벤 교향곡 5번">
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=600&fit=crop" alt="오케스트라 연주 2" class="slide-image" data-image-url="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200&h=800&fit=crop" data-date="2024.02.20" data-description="청소년 오케스트라 합주 연습 - 모차르트 교향곡 40번">
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop" alt="오케스트라 연주 3" class="slide-image" data-image-url="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop" data-date="2024.01.10" data-description="청소년 오케스트라 겨울음악회 - 차이콥스키 호두까기 인형">
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=600&fit=crop" alt="오케스트라 연주 4" class="slide-image" data-image-url="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200&h=800&fit=crop" data-date="2023.12.25" data-description="청소년 오케스트라 크리스마스 콘서트 - 헨델 메시아">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" id="prevBtn">‹</button>
+                        <button class="slider-btn next-btn" id="nextBtn">›</button>
+                        <div class="slider-dots" id="sliderDots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scene 3: 성인 앙상블 섹션 -->
+        <section class="scene scene-3" id="scene3">
+            <div class="container">
+                <div class="lesson-content">
+                    <h1 class="lesson-title">성인 앙상블</h1>
+                    <p class="lesson-subtitle">Adult Ensemble</p>
+                    <div class="lesson-description">
+                        <p>효정 성인 앙상블은 음악을 사랑하는 성인들이 모여 함께하는 앙상블입니다.</p>
+                        <p>다양한 악기로 아름다운 하모니를 만들어가며 음악의 즐거움을 나눕니다.</p>
+                    </div>
+                    
+                    <!-- 이미지 슬라이드 -->
+                    <div class="image-slider">
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop" alt="성인 앙상블 연주 1" class="slide-image" data-image-url="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop" data-date="2024.03.10" data-description="성인 앙상블 정기연주회 - 브람스 교향곡 1번">
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=600&fit=crop" alt="성인 앙상블 연주 2" class="slide-image" data-image-url="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200&h=800&fit=crop" data-date="2024.02.15" data-description="성인 앙상블 실내악 연주회 - 슈베르트 현악4중주">
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop" alt="성인 앙상블 연주 3" class="slide-image" data-image-url="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop" data-date="2024.01.05" data-description="성인 앙상블 봄음악회 - 드보르작 교향곡 9번">
+                                </div>
+                                <div class="slide">
+                                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&h=600&fit=crop" alt="성인 앙상블 연주 4" class="slide-image" data-image-url="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1200&h=800&fit=crop" data-date="2023.12.20" data-description="성인 앙상블 송년음악회 - 말러 교향곡 1번">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" id="prevBtn2">‹</button>
+                        <button class="slider-btn next-btn" id="nextBtn2">›</button>
+                        <div class="slider-dots" id="sliderDots2">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scene 4: 영상 갤러리 섹션 -->
+        <section class="scene scene-4" id="scene4">
+            <div class="container">
+                <h2 class="gallery-title">효정 바이올린 영상</h2>
+                <p class="gallery-subtitle"></p>
+                
+                <!-- 바둑판 그리드 -->
+                <div class="grid-container" id="gridContainer">
+                    <!-- 영상들이 여기에 동적으로 추가됩니다 -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scene 5: 인사말 섹션 -->
+        <section class="scene scene-5" id="scene5">
+            <div class="container">
+                <div class="location-section">
+                    <h3 class="location-title">교습소 위치</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0!2d127.0!3d37.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMwJzAwLjAiTiAxMjfCsDAwJzAwLjAiRQ!5e0!3m2!1sko!2skr!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="location-info">
+                        <p><strong>주소:</strong> 서울특별시 강남구 역삼동 123-45</p>
+                        <p><strong>전화:</strong> 02-1234-5678</p>
+                        <p><strong>운영시간:</strong> 평일 10:00-22:00, 주말 10:00-18:00</p>
+                        <p><strong>바이올린 악기사:</strong> 전문 악기 수리 및 조율 서비스</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <button class="kakao-btn" id="kakaoBtn">
+                        <div class="kakao-icon">💬</div>
+                        <span>카카오톡 문의하기</span>
+                    </button>
+                    <button class="instagram-btn" id="instagramBtn">
+                        <div class="instagram-icon">📸</div>
+                        <span>인스타그램</span>
+                    </button>
+                    <button class="youtube-btn" id="youtubeBtn">
+                        <div class="youtube-icon">🎬</div>
+                        <span>유튜브</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 비디오 모달 오버레이 -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-content">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <div class="video-container" id="videoContainer">
+                    <!-- 선택된 영상이 여기에 표시됩니다 -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- 이미지 모달 오버레이 -->
+        <div class="image-modal-overlay" id="imageModalOverlay">
+            <div class="image-modal-content">
+                <button class="image-close-btn" id="imageCloseBtn">&times;</button>
+                <div class="image-container" id="imageContainer">
+                    <!-- 선택된 이미지가 여기에 표시됩니다 -->
+                </div>
+                <div class="image-info" id="imageInfo">
+                    <div class="image-date" id="imageDate"></div>
+                    <div class="image-description" id="imageDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
