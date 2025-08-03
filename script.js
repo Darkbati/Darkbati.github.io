@@ -21,37 +21,37 @@ const TRANSITION_DURATION = 1000; // 전환 애니메이션 지속 시간 (ms)
 // 데이터 정의
 // ============================================================================
 
-// 유튜브 영상 데이터
+// 블로그 관련 영상 데이터
 const videos = [
     {
         id: 'cYXaxF_JYvI',
-        title: '2024년 제5회 효정 오케스트라 정기연주회',
-        description: '베부평아트센터 달누리극장 - 제5회 효정오케스트라 정기연주회'
+        title: '블로그 소개 영상 - 효정의 일상',
+        description: '블로그를 시작하게 된 계기와 앞으로의 계획을 담은 영상입니다.'
     },
     {
         id: 'z4gx6T21iNw',
-        title: '효정 청소년 오케스트라 - 캐리비안의 해적 OST',
-        description: '캐리비안의 해적 OST'
+        title: '봄날의 산책 - 새로운 계절을 맞이하며',
+        description: '봄날의 아름다운 풍경과 함께하는 산책 이야기'
     },
     {
         id: 'gxjUszGewJM',
-        title: '2021년 효정성인앙상블',
-        description: 'A ChristMas Festival - Tchaikovsky Symphony No. 5'
+        title: '독서의 즐거움 - 이번 달 읽은 책들',
+        description: '최근에 읽은 책들의 감상과 생각을 나누는 시간'
     },
     {
         id: 'H5tc-iJ562E',
-        title: '제4회 정기연주회 ',
-        description: '에필로그 epilogue'
+        title: '음악과 함께하는 시간',
+        description: '좋아하는 음악과 음악에 대한 생각을 담은 영상'
     }
 ];
 
 // 배경 이미지 데이터
 const backgroundImages = {
-    scene1: ['https://image.ajunews.com/content/image/2023/01/19/20230119074951124890.jpg'],
+    scene1: ['https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1920&h=1080&fit=crop'],
     scene2: ['https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1920&h=1080&fit=crop'],
     scene3: ['https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&h=1080&fit=crop'],
     scene4: ['https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&h=1080&fit=crop'],
-    scene5: ['https://senior.chosun.com/site/data/img_dir/2010/12/01/2010120165038_0.jpg']
+    scene5: ['https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&h=1080&fit=crop']
 };
 
 // ============================================================================
@@ -500,17 +500,17 @@ function openKakaoTalk() {
         window.open(kakaoChatUrl, '_blank');
     }
     
-    alert('카카오톡이 열립니다. 문의사항이 있으시면 언제든 연락주세요!');
+    alert('카카오톡이 열립니다. 블로그 관련 문의사항이 있으시면 언제든 연락주세요!');
 }
 
 /**
  * 인스타그램 열기 함수
  */
 function openInstagram() {
-    const instagramUrl = 'https://www.instagram.com/hyojeongviolincello/';
+    const instagramUrl = 'https://www.instagram.com/hyojeong_blog/';
     
     if (isMobileDevice()) {
-        const instagramAppUrl = 'instagram://user?username=hyojeongviolincello';
+        const instagramAppUrl = 'instagram://user?username=hyojeong_blog';
         window.location.href = instagramAppUrl;
         
         setTimeout(() => {
@@ -520,17 +520,17 @@ function openInstagram() {
         window.open(instagramUrl, '_blank');
     }
     
-    alert('인스타그램이 열립니다. @hyojeongviolincello 프로필을 확인해보세요!');
+    alert('인스타그램이 열립니다. @hyojeong_blog 프로필을 확인해보세요!');
 }
 
 /**
  * 유튜브 열기 함수
  */
 function openYouTube() {
-    const youtubeUrl = 'https://www.youtube.com/@%ED%9A%A8%EC%A0%95%EC%98%A4%EC%BC%80%EC%8A%A4%ED%8A%B8%EB%9D%BC';
+    const youtubeUrl = 'https://www.youtube.com/@hyojeong_blog';
     
     if (isMobileDevice()) {
-        const youtubeAppUrl = 'youtube://channel/효정오케스트라';
+        const youtubeAppUrl = 'youtube://channel/hyojeong_blog';
         window.location.href = youtubeAppUrl;
         
         setTimeout(() => {
@@ -540,7 +540,7 @@ function openYouTube() {
         window.open(youtubeUrl, '_blank');
     }
     
-    alert('유튜브가 열립니다. 효정 오케스트라 채널을 확인해보세요!');
+    alert('유튜브가 열립니다. 효정의 블로그 채널을 확인해보세요!');
 }
 
 /**
@@ -573,7 +573,6 @@ function handleScroll() {
         changeScene(clampedTargetScene);
     }
 }
-
 
 
 // ============================================================================
