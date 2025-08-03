@@ -499,8 +499,6 @@ function openKakaoTalk() {
     } else {
         window.open(kakaoChatUrl, '_blank');
     }
-    
-    alert('카카오톡이 열립니다. 블로그 관련 문의사항이 있으시면 언제든 연락주세요!');
 }
 
 /**
@@ -519,8 +517,6 @@ function openInstagram() {
     } else {
         window.open(instagramUrl, '_blank');
     }
-    
-    alert('인스타그램이 열립니다. @hyojeong_blog 프로필을 확인해보세요!');
 }
 
 /**
@@ -539,8 +535,6 @@ function openYouTube() {
     } else {
         window.open(youtubeUrl, '_blank');
     }
-    
-    alert('유튜브가 열립니다. 효정의 블로그 채널을 확인해보세요!');
 }
 
 /**
